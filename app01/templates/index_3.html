@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="2">
+    <caption>搜索结果</caption>
+    <tr>
+        <th>系</th>
+        <th>姓名</th>
+        <th>职称</th>
+    </tr>
+
+{% for someone in list %}
+    <tr >
+    <td>{{ someone.Department }}</td>
+    <td>{{ someone.name }}</td>
+    <td>{{ someone.title }}</td>
+    <td><img src ="{%  static someone.ways %}" alt="" height="300px" width="200px" ></td>
+
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>

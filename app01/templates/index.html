@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+
+
+<body>
+{%  load static %}
+<h1>北邮教师</h1>
+<div class ="search">
+    <form method="post">
+        {% csrf_token  %}
+        <input class="placeholder" placeholder="请输入教师信息" name="q">
+        <input type="submit" value="提交"/>
+    </form>
+</div>
+<form action="" method="post">
+    <label>
+        <input type="checkbox" name="my_value" value="传播学系">
+        &nbsp; 传播学系
+    </label>
+    <label>
+        <input type="checkbox" name="my_value" value="数字媒体系">
+        &nbsp; 数字媒体系
+    </label>
+    <label>
+        <input type="checkbox" name="my_value" value="设计系">
+        &nbsp; 设计系
+    </label>
+    <label>
+        <input type="checkbox" name="my_value" value="艺术教研中心">
+        &nbsp; 艺术教研中心
+    </label>
+    <label>
+        <input type="checkbox" name="my_value" value="设计系">
+        &nbsp; 设计系
+    </label>
+    <input type="submit">
+    {% csrf_token %}
+</form>
+</body>
+</html>
+
+
+

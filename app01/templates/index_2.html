@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+
+        <th>{{ obj.name }}</th>
+        <th>{{ obj.Department }}</th>
+        <th>{{ obj.title }}</th>
+        <img src ="{%  static obj.ways %}" alt="" height="300px" width="200px" >
+
+    </tr>
+</table>
+</body>
+</html>
